@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.iconpacks.net/icons/1/free-heart-icon-431-thumb.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ส่งจีบเธอ</title>
+  </head>
+  <body>
+    <!-- หน้าแรก -->
+    <div id="mainPage" class="container">
+      <span class="title">ที่รักรักเค้าม้ายยย?</span>
+      <img id="mainImage" src="doyou.png" alt="Do you?" />
+
+      <div class="button-container">
+        <button
+          id="noButton"
+          class="button"
+          onmouseover="changeImage('hm.png')"
+          onmouseout="resetImage()"
+          onclick="showPage('menuPage')"
+        >
+          ไม่
+        </button>
+        <button
+          id="loveButton"
+          class="button"
+          onmouseover="changeImage('pinkping.png')"
+          onmouseout="resetImage()"
+          onclick="showPage('menuPage')"
+        >
+          รักกก
+        </button>
+      </div>
+    </div>
+
+    <!-- หน้าเมนูเลือก -->
+    <div id="menuPage" class="container hidden">
+      <h1>เลือกหัวข้อที่อยากไป 💖</h1>
+      <div class="menu-container">
+        <button class="menu-button" onclick="showPage('birthdayPage')">
+          สุขสันต์วันเกิด 🎂
+        </button>
+        <button class="menu-button" onclick="showPage('lovePage')">
+          คำบอกรัก 💌
+        </button>
+        <button class="menu-button" onclick="showPage('jokePage')">
+          coming soon 😂
+        </button>
+        <button class="menu-button" onclick="showPage('noPage')">
+          ถ้ายังจะกดไม่! 😡
+        </button>
+      </div>
+    </div>
+
+        <!-- หน้าคำบอกรัก -->
+        <div id="lovePage" class="container hidden">
+          <h1>แงงเค้าก็รักเบเบี๋ที่สุดเลยย 💖</h1>
+          <img src="loveu.png" alt="Love You" />
+        </div>
+    
+        <!-- หน้าสุขสันต์วันเกิด -->
+        <div id="birthdayPage" class="container hidden">
+          <h1>สุขสันต์วันเกิดนะคะ 🎂🎉</h1>
+          <img src="birthday.png" alt="birthday" />
+        </div>
+    
+        <!-- หน้ามุกตลก -->
+        <div id="jokePage" class="container hidden">
+          <h1>coming soon 😂</h1>
+          <p>ก็บอกว่า coming soonไง! 🤣</p>
+          <button class="button" onclick="showPage('menuPage')">กลับไปเลือกใหม่</button>
+        </div>
+    
+        <!-- หน้าถ้ายังจะกด No -->
+        <div id="noPage" class="container hidden">
+          <h1>ทำไมใจร้ายแบบนี้! 😡</h1>
+          <img src="die.png" alt="Die" />
+        </div>
+    
+        <script src="script.js"></script>
+      </body>
+    </html>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
